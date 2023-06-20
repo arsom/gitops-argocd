@@ -1,1 +1,6 @@
 nginx/mysql/data
+
+MERNStackWithDockers/mongodb/db
+MERNStackWithDockers/nodejs/node_modules
+MERNStackWithDockers/reactjs/node_modules
+MERNStackWithDockers/reactjs/package-lock.json
