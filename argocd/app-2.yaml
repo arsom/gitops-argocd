@@ -9,7 +9,7 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec: 
   destination: 
-    namespace: multi-app
+    namespace: app2
     server: "https://kubernetes.default.svc"
   project: default
   source: 
