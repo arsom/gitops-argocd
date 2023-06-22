@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: demo-project
+  namespace: argocd
+spec:
+  description: Demo Project
+  sourceRepos:
+  - '*' # allow to deploy from all repositories
+  destinations:
+  - namespace: '*' # allow to deploy to all namespaces
+    server: '*' # allow to deploy to all clusters
+  clusterResourceWhitelist:
+  - group: '*' # allow all groups
+    kind: '*' # allow all kinds
+  namespaceResourceWhitelist:
+  - group: '*' # allow all groups
+    kind: '*' # allow all kinds

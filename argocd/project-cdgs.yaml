@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject  
+metadata:         
+  name: cdgs      
+  namespace: argocd             
+spec:             
+  description: cdgs             
+  destinations:   
+  - name: in-cluster            
+    namespace: 'cdgs'
+    server: https://kubernetes.default.svc    
+  sourceRepos:    
+  - https://github.com/arsom/gitops-argocd.git
